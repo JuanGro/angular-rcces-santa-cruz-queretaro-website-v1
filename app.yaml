@@ -1,13 +1,24 @@
 runtime: python27
-threadsafe: true
 api_version: 1
+threadsafe: true
 
 handlers:
-- url: /(.*\.(gif|png|jpeg|jpg|css|js|ico|otf|ttf|svg|woff))$
-  static_files: dist/\1
-  upload: dist/(.*)
+- url: /
+  static_files: dist/argon-design-system-angular/index.html
+  upload: dist/argon-design-system-angular/index.html
   secure: always
-- url: /(.*)
-  static_files: dist/index.html
-  upload: dist/index.html
+
+- url: /
+  static_dir: dist/argon-design-system-angular
   secure: always
+
+skip_files:
+  - e2e/
+  - node_modules/
+  - src/
+  - coverage
+  - ^(.*/)?\..*$
+  - ^(.*/)?.*\.json$
+  - ^(.*/)?.*\.md$
+  - ^(.*/)?.*\.yaml$
+  - ^LICENSE
