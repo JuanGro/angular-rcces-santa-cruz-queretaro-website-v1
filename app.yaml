@@ -4,12 +4,12 @@ threadsafe: true
 
 handlers:
 - url: /
-  static_files: dist/argon-design-system-angular/index.html
-  upload: dist/argon-design-system-angular/index.html
+  static_files: dist/rcces-santa-cruz-queretaro/index.html
+  upload: dist/rcces-santa-cruz-queretaro/index.html
   secure: always
 
 - url: /
-  static_dir: dist/argon-design-system-angular
+  static_dir: dist/rcces-santa-cruz-queretaro
   secure: always
 
 skip_files:

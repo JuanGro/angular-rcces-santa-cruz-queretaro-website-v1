@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "argon-design-system-angular": {
+    "rcces-santa-cruz-queretaro": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/argon-design-system-angular",
+            "outputPath": "dist/rcces-santa-cruz-queretaro",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -52,18 +52,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "argon-design-system-angular:build"
+            "browserTarget": "rcces-santa-cruz-queretaro:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "argon-design-system-angular:build:production"
+              "browserTarget": "rcces-santa-cruz-queretaro:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "argon-design-system-angular:build"
+            "browserTarget": "rcces-santa-cruz-queretaro:build"
           }
         },
         "test": {
@@ -97,7 +97,7 @@
         }
       }
     },
-    "argon-design-system-angular-e2e": {
+    "rcces-santa-cruz-queretaro-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -105,11 +105,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "argon-design-system-angular:serve"
+            "devServerTarget": "rcces-santa-cruz-queretaro:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "argon-design-system-angular:serve:production"
+              "devServerTarget": "rcces-santa-cruz-queretaro:serve:production"
             }
           }
         },
@@ -125,7 +125,7 @@
       }
     }
   },
-  "defaultProject": "argon-design-system-angular",
+  "defaultProject": "rcces-santa-cruz-queretaro",
   "cli": {
     "analytics": false
   }
