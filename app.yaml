@@ -17,7 +17,6 @@ skip_files:
   - node_modules/
   - src/
   - coverage
-  - ^(.*/)?\..*$
   - ^(.*/)?.*\.json$
   - ^(.*/)?.*\.md$
   - ^(.*/)?.*\.yaml$
